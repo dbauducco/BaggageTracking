@@ -1,0 +1,6 @@
+framework module Pods_BaggageTracking {
+  umbrella header "Pods-BaggageTracking-umbrella.h"
+
+  export *
+  module * { export * }
+}

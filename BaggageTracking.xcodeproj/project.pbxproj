@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D863C475797D658804671D /* Pods_BaggageTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040D1F14332BCE77BBAD260B /* Pods_BaggageTracking.framework */; };
 		6386EE9E23DCE9D10089B8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386EE9D23DCE9D10089B8AC /* AppDelegate.swift */; };
 		6386EEA023DCE9D10089B8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386EE9F23DCE9D10089B8AC /* SceneDelegate.swift */; };
 		6386EEA223DCE9D10089B8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6386EEA123DCE9D10089B8AC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040D1F14332BCE77BBAD260B /* Pods_BaggageTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaggageTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6386EE9A23DCE9D10089B8AC /* BaggageTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaggageTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6386EE9D23DCE9D10089B8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6386EE9F23DCE9D10089B8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,9 @@
 		6386EEA623DCE9D30089B8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6386EEA923DCE9D30089B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6386EEAB23DCE9D30089B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6386EEB123DCEE0C0089B8AC /* BaggageTracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaggageTracking.entitlements; sourceTree = "<group>"; };
+		74919F28DAB8CD6765CC2DB7 /* Pods-BaggageTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaggageTracking.debug.xcconfig"; path = "Target Support Files/Pods-BaggageTracking/Pods-BaggageTracking.debug.xcconfig"; sourceTree = "<group>"; };
+		BAFE94143978BA83705AB35D /* Pods-BaggageTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaggageTracking.release.xcconfig"; path = "Target Support Files/Pods-BaggageTracking/Pods-BaggageTracking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D863C475797D658804671D /* Pods_BaggageTracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225C75CABCFEACD33F6DE203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040D1F14332BCE77BBAD260B /* Pods_BaggageTracking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25B8E5C2AAB31A29A8C00A1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74919F28DAB8CD6765CC2DB7 /* Pods-BaggageTracking.debug.xcconfig */,
+				BAFE94143978BA83705AB35D /* Pods-BaggageTracking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6386EE9123DCE9D10089B8AC = {
 			isa = PBXGroup;
 			children = (
 				6386EE9C23DCE9D10089B8AC /* BaggageTracking */,
 				6386EE9B23DCE9D10089B8AC /* Products */,
+				25B8E5C2AAB31A29A8C00A1C /* Pods */,
+				225C75CABCFEACD33F6DE203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		6386EE9C23DCE9D10089B8AC /* BaggageTracking */ = {
 			isa = PBXGroup;
 			children = (
+				6386EEB123DCEE0C0089B8AC /* BaggageTracking.entitlements */,
 				6386EE9D23DCE9D10089B8AC /* AppDelegate.swift */,
 				6386EE9F23DCE9D10089B8AC /* SceneDelegate.swift */,
 				6386EEA123DCE9D10089B8AC /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6386EEAE23DCE9D30089B8AC /* Build configuration list for PBXNativeTarget "BaggageTracking" */;
 			buildPhases = (
+				6288100D7246BAA477B44F8A /* [CP] Check Pods Manifest.lock */,
 				6386EE9623DCE9D10089B8AC /* Sources */,
 				6386EE9723DCE9D10089B8AC /* Frameworks */,
 				6386EE9823DCE9D10089B8AC /* Resources */,
+				08AC3C68B3D4353EBEFA2ED7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08AC3C68B3D4353EBEFA2ED7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaggageTracking/Pods-BaggageTracking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaggageTracking/Pods-BaggageTracking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaggageTracking/Pods-BaggageTracking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6288100D7246BAA477B44F8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaggageTracking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6386EE9623DCE9D10089B8AC /* Sources */ = {
@@ -282,8 +353,10 @@
 		};
 		6386EEAF23DCE9D30089B8AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74919F28DAB8CD6765CC2DB7 /* Pods-BaggageTracking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaggageTracking/BaggageTracking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJZ9PXW3DE;
 				INFOPLIST_FILE = BaggageTracking/Info.plist;
@@ -300,8 +373,10 @@
 		};
 		6386EEB023DCE9D30089B8AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFE94143978BA83705AB35D /* Pods-BaggageTracking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BaggageTracking/BaggageTracking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJZ9PXW3DE;
 				INFOPLIST_FILE = BaggageTracking/Info.plist;
